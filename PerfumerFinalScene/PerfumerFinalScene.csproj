@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net6.0-windows</TargetFramework>
+    <TargetFramework>net6.0-windows7.0</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
     <ApplicationIcon>icon50.ico</ApplicationIcon>
@@ -17,11 +17,15 @@
     <None Remove="Resources\icon50.ico" />
     <None Remove="Resources\j_lqasli650.jpg" />
     <None Remove="Resources\png-default-user-photo.png" />
+    <None Remove="Resources\Qc1djwuxqS8.jpg" />
     <None Remove="Resources\question-mark.png" />
+    <None Remove="Resources\R1d2jwuxqS8.jpg" />
     <None Remove="Resources\resize.jpg" />
     <None Remove="Resources\small_pomada.jpg" />
     <None Remove="Resources\small_rymyana_cargo_cosmetics_10.jpg" />
     <None Remove="Resources\transparent-plant-ivy-tree.png" />
+    <None Remove="Resources\v1xjtmQ7aFU.jpg" />
+    <None Remove="Resources\zamena.jpg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -41,11 +45,15 @@
     <Resource Include="Resources\icon50.ico" />
     <Resource Include="Resources\j_lqasli650.jpg" />
     <Resource Include="Resources\png-default-user-photo.png" />
+    <Resource Include="Resources\Qc1djwuxqS8.jpg" />
     <Resource Include="Resources\question-mark.png" />
+    <Resource Include="Resources\R1d2jwuxqS8.jpg" />
     <Resource Include="Resources\resize.jpg" />
     <Resource Include="Resources\small_pomada.jpg" />
     <Resource Include="Resources\small_rymyana_cargo_cosmetics_10.jpg" />
     <Resource Include="Resources\transparent-plant-ivy-tree.png" />
+    <Resource Include="Resources\v1xjtmQ7aFU.jpg" />
+    <Resource Include="Resources\zamena.jpg" />
   </ItemGroup>
 
 </Project>

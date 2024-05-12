@@ -30,12 +30,12 @@
 
         <StackPanel Grid.ColumnSpan="3" Grid.Row="1" Grid.RowSpan="2" VerticalAlignment="Center">
             <StackPanel Margin="15">
-                <TextBlock Text="Логин" FontSize="28" FontWeight="Bold"/>                
-                <TextBox x:Name="tbLogin" Margin="5" FontSize="24"/>
-                <TextBlock Text="Пароль" FontSize="28" FontWeight="Bold"/>                
-                <PasswordBox x:Name="tbPass" Margin="5" FontSize="24"/>
-                <Button x:Name="btnIn" Content="Войти" FontSize="24" Margin="15" Click="btnIn_Click"/>
-                <Button x:Name="btnUp" Content="Присоедениться к системе" Margin="10 0" FontSize="28" Click="btnUp_Click"/>
+                <TextBlock Text="Логин" FontSize="28" FontWeight="Bold" MaxWidth="600" />
+                <TextBox x:Name="tbLogin" Margin="5" FontSize="24" MaxWidth="600" />
+                <TextBlock Text="Пароль" FontSize="28" FontWeight="Bold" MaxWidth="600" />
+                <PasswordBox x:Name="tbPass" Margin="5" FontSize="24" MaxWidth="600" />
+                <Button x:Name="btnIn" Content="Войти" FontSize="24" MaxWidth="550" Margin="15" Click="btnIn_Click"/>
+                <Button x:Name="btnUp" Content="Присоедениться к системе" MaxWidth="600" Margin="10 0" FontSize="28" Click="btnUp_Click"/>
             </StackPanel>
 
         </StackPanel>

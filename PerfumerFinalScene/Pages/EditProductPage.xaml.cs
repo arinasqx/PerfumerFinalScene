@@ -35,8 +35,14 @@ namespace PerfumerFinalScene.Pages
         {
             try
             {
-                int tempType = db.productType.Where(x => x.name == cbType.Text).Select(x => x.id).FirstOrDefault();
                 float tempPrice = (float)Math.Round(float.Parse(tbPrice.Text), 2);
+
+                if (tempPrice < 0)
+                {
+                    MessageBox.Show("Неправильная стоимость");
+                    return;
+                }
+                int tempType = db.productType.Where(x => x.name == cbType.Text).Select(x => x.id).FirstOrDefault();
                 db.product.Add(new Product() { name=tbFirst.Text, description = image.Source.ToString(), price=tempPrice, typeId = tempType });
                 db.SaveChanges();
                 MessageBox.Show("item has been added");

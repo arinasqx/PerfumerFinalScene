@@ -9,14 +9,14 @@
       Title="AddNewUserPage">
 
     <Grid Background="Salmon">
-        <Image Source="/Resources/j_lqasli650.jpg" Opacity="0.5" Stretch="Fill">
+        <Image Source="/Resources/zamena.jpg" Opacity="0.9" Stretch="Fill">
             <Image.Effect>
                 <BlurEffect Radius="5"/>
             </Image.Effect>
         </Image>
 
         <Button x:Name="btnGoBack" HorizontalAlignment="Left" FontSize="28" Padding="5 0" VerticalAlignment="Top" Margin="10" Content="↩" Click="btnGoBack_Click"/>
-        <TextBlock FontFamily="Bookman Old Style" Background="AntiqueWhite" Padding="25 10" Text="👤 Добавление нового пользователя" FontSize="32" Margin="25" Foreground="Brown" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <TextBlock FontFamily="Bookman Old Style" Background="#FFFFF0F1" Padding="25 10" Text="👤 Добавление нового пользователя" FontSize="32" Margin="25" Foreground="Brown" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Top"/>
 
 
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">

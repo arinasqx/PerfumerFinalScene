@@ -32,16 +32,16 @@
 
         <StackPanel Grid.ColumnSpan="3">
             <Button Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Button_Click">
-                <TextBlock Grid.ColumnSpan="3" Margin="10" Background="#FF65FF65" Text="    the best shop in the world  " Padding="10" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="18" FontWeight="Black">
+                <TextBlock Grid.ColumnSpan="3" Margin="10" Background="#FFD9FFB5" Text="    ДОМОЙ  " Padding="50 10" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="22" FontWeight="Black">
                     <TextBlock.Effect>
                         <DropShadowEffect Color="#FF65FF65" BlurRadius="15" Direction="90" ShadowDepth="5"/>
                     </TextBlock.Effect>
                 </TextBlock>
             </Button>
 
-            <TextBlock Grid.ColumnSpan="3" Margin="5" Background="#FF65FF65" Text="Каталог" Padding="5 0" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="22" FontWeight="Black">
+            <TextBlock Grid.ColumnSpan="3" Margin="5" Background="#FFB1FFB1" Text="Каталог" Padding="10 0" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="22" FontWeight="Black">
                 <TextBlock.Effect>
-                    <DropShadowEffect Color="#FF65FF65" BlurRadius="25" Direction="90" ShadowDepth="10"/>
+                    <DropShadowEffect Color="#FF65FF65" BlurRadius="20" Direction="90" ShadowDepth="5"/>
                 </TextBlock.Effect>
             </TextBlock>
         </StackPanel>

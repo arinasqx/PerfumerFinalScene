@@ -34,7 +34,7 @@
 
             </StackPanel>
 
-            <TextBlock Grid.ColumnSpan="3" Margin="20" Background="#FF65FF65" Text="    the best shop in the world  " Padding="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="32" FontWeight="Black">
+            <TextBlock Grid.ColumnSpan="3" Margin="20" Background="#FF65FF65" Text="    AROMAS  " Padding="40 10" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="32" FontWeight="Black">
                 <TextBlock.Effect>
                     <DropShadowEffect Color="#FF65FF65" BlurRadius="25" Direction="90" ShadowDepth="10"/>
                 </TextBlock.Effect>
@@ -46,19 +46,30 @@
                 </TextBlock.Effect>
             </TextBlock>
 
-            <StackPanel Grid.Row="2" Grid.ColumnSpan="3" Background="#FFB9FFB9" Margin="10" Orientation="Horizontal" HorizontalAlignment="Center">
-                <Button HorizontalAlignment="Center" VerticalAlignment="Center" Padding="15 0" Background="Transparent" Click="Button_Click_2">
-                    <StackPanel Orientation="Vertical">
-                        <Image Source="/Resources/graphic-catalog.png" MaxHeight="200" MaxWidth="300"/>
-                        <TextBlock Text="Каталог" FontSize="18" TextAlignment="Center" />
-                    </StackPanel>
-                </Button>
-                <Button Visibility="Visible" HorizontalAlignment="Center" VerticalAlignment="Center" Padding="15 0" Background="Transparent">
+            <StackPanel Grid.Row="2" Grid.ColumnSpan="3" Background="#FFD8B69B" Margin="10" Orientation="Horizontal" HorizontalAlignment="Center">
+                <Image Source="/Resources/Qc1djwuxqS8.jpg" Margin="25" MaxHeight="600" MaxWidth="350">
+                </Image>
+
+                <StackPanel Background="#FFD6B292">
+                    <TextBlock Text="AROMAS" FontSize="34" FontWeight="Black" Margin="20" Background="#FFD1A888" Padding="15 0"/>
+                    <TextBlock Text="«элитная парфюмериям косметика»"  FontSize="22" Margin="10 0">
+                    </TextBlock>
+
+                    <Button HorizontalAlignment="Center" VerticalAlignment="Center" Padding="15 0" Margin="10" Click="Button_Click_2" Background="Transparent">
+                        <StackPanel Orientation="Vertical" Background="AliceBlue" Margin="5">
+
+                            <TextBlock Text="🛍️" FontSize="124" Background="#FFD4B7A5" Margin="5"/>
+                            <TextBlock Text="Каталог" FontSize="18" TextAlignment="Center" />
+                        </StackPanel>
+                    </Button>
+                </StackPanel>
+
+                <!--<Button Visibility="Visible" HorizontalAlignment="Center" VerticalAlignment="Center" Padding="15 0" Background="Transparent">
                     <StackPanel Orientation="Vertical">
                         <Image Source="/Resources/691.jpg" MaxHeight="300" MaxWidth="350"/>
                         <TextBlock Text="dogalog" FontSize="18" VerticalAlignment="Center" />
                     </StackPanel>
-                </Button>
+                </Button>-->
             </StackPanel>
 
             <TextBlock Margin="3" FontSize="16" TextWrapping="Wrap" Text="© 2009-2024 . Официальный сайт Государственного автономного профессионального образовательного учреждения 'Оренбургский колледж экономики и информатики'" Grid.Row="3" Grid.ColumnSpan="3" VerticalAlignment="Bottom" Background="AliceBlue" TextAlignment="Center"/>
