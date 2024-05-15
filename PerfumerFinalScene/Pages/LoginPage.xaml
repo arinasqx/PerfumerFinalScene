@@ -19,25 +19,21 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        
-        <Image Source="/Resources/13bb.jpg" Opacity="0.5" Grid.ColumnSpan="3" Grid.RowSpan="3"/>
 
-        <TextBlock Background="GhostWhite" Text="  Добро пожаловать !!  " Grid.ColumnSpan="3" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="50" FontWeight="Black">
-            <TextBlock.Effect>
-                <DropShadowEffect BlurRadius="26" Direction="180" Opacity="0.75" RenderingBias="Performance" ShadowDepth="5" Color="#FFFF00EA"/>
-            </TextBlock.Effect>
-        </TextBlock>
+        <Image Source="/Resources/авторр.png" Grid.ColumnSpan="3" RenderTransformOrigin="0.5,0.5" Grid.RowSpan="3" Margin="-293,-31,-261,-92"/>
+        <TextBlock  Background="Transparent" Text="АВТОРИЗАЦИЯ" Grid.ColumnSpan="3"  VerticalAlignment="Center" FontSize="50" FontWeight="Black" Width="414" Margin="26,10,0,0" Height="75" Foreground="#BFFFE0B7"/>
 
-        <StackPanel Grid.ColumnSpan="3" Grid.Row="1" Grid.RowSpan="2" VerticalAlignment="Center">
-            <StackPanel Margin="15">
-                <TextBlock Text="Логин" FontSize="28" FontWeight="Bold" MaxWidth="600" />
-                <TextBox x:Name="tbLogin" Margin="5" FontSize="24" MaxWidth="600" />
-                <TextBlock Text="Пароль" FontSize="28" FontWeight="Bold" MaxWidth="600" />
-                <PasswordBox x:Name="tbPass" Margin="5" FontSize="24" MaxWidth="600" />
-                <Button x:Name="btnIn" Content="Войти" FontSize="24" MaxWidth="550" Margin="15" Click="btnIn_Click"/>
-                <Button x:Name="btnUp" Content="Присоедениться к системе" MaxWidth="600" Margin="10 0" FontSize="28" Click="btnUp_Click"/>
-            </StackPanel>
 
+        <StackPanel Grid.ColumnSpan="3" Grid.RowSpan="2" VerticalAlignment="Top" Height="342" Margin="0,10,0,0" Grid.Row="1">
+
+
+
+            <TextBlock FontSize="28" FontWeight="Bold" MaxWidth="600" Foreground="#BFFFE0B7" Height="37" Width="572" ><Run Text="Л"/><Run Language="ru-ru" Text="ОГИН"/></TextBlock>
+            <TextBox x:Name="tbLogin" FontSize="24" MaxWidth="600" Width="602" />
+            <TextBlock FontSize="28" FontWeight="Bold" MaxWidth="600" Foreground="#BFFFE0B7" Height="37" Width="570" ><Run Text="П"/><Run Language="ru-ru" Text="АРОЛЬ"/></TextBlock>
+            <PasswordBox x:Name="tbPass" Margin="5" FontSize="24" MaxWidth="600" />
+            <Button x:Name="btnIn" Content="Войти" FontSize="24" MaxWidth="550" Click="btnIn_Click" Width="134" Height="38" Margin="0,20,0,0"/>
+            <Button x:Name="btnUp" Content="Нет аккаунта?" Background="Transparent"  BorderThickness="0" BorderBrush="Transparent" Margin="0,93,500,0" FontSize="28" Click="btnUp_Click" Width="200" Height="43"/>
         </StackPanel>
     </Grid>
 </Page>

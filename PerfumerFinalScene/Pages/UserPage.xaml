@@ -8,7 +8,8 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="UserPage">
 
-    <Grid Background="LightSalmon">
+    <Grid Background="Salmon">
+
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition/>
@@ -19,27 +20,27 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
+        <Image Source="/Resources/профиль.jpg" MaxHeight="1000" MaxWidth="1000" Grid.ColumnSpan="3"  Grid.RowSpan="3" />
+        <Button HorizontalAlignment="Left" FontSize="28" Padding="5 0" VerticalAlignment="Bottom" Margin="21,10,10,100" Content="↩" Click="Button_Click"/>
 
-        <Button HorizontalAlignment="Left" FontSize="28" Padding="5 0" VerticalAlignment="Top" Margin="5" Content="↩" Click="Button_Click"/>
+        <TextBlock Text="ПРОФИЛЬ" Grid.ColumnSpan="3" TextAlignment="Center" VerticalAlignment="Top" FontSize="34" FontWeight="UltraBlack"  Margin="186,5,213,0" Height="55"/>
 
-        <TextBlock Text="Профиль" Grid.ColumnSpan="3" TextAlignment="Center" VerticalAlignment="Center" FontSize="34" FontWeight="UltraBlack" Background="#FFE8E8E8"/>
-
-        <StackPanel Grid.Row="1" Grid.Column="2">
-            <Image Source="/Resources/png-default-user-photo.png" MaxHeight="100" MaxWidth="100"/>
-            <Button Content="Изменить фотографию" FontSize="18" Margin="5"/>
+        <StackPanel Grid.Column="1" Grid.ColumnSpan="2" Margin="133,118,85,75" Grid.RowSpan="3">
+            <Image Source="/Resources/фото.png" MaxHeight="500" MaxWidth="500" Height="160" Width="161"/>
+            <Button Content="Изменить фотографию" FontSize="18"  Margin="0,30,0,0" Height="33" Width="212" FontWeight="Bold"/>
         </StackPanel>
 
-        <StackPanel Grid.Row="1" Grid.ColumnSpan="2" Grid.RowSpan="2">
-            <TextBlock Text="Имя" FontSize="16"/>
-            <TextBox x:Name="tbFirst" FontSize="18" Margin="5"/>
-            <TextBlock Text="Фамилия" FontSize="16"/>
-            <TextBox x:Name="tbSecond" FontSize="18" Margin="5"/>
-            <TextBlock Text="Отчество (опционально)" FontSize="16"/>
-            <TextBox x:Name="tbThird" FontSize="18" Margin="5"/>
-            <TextBlock Text="Возраст" FontSize="16"/>
-            <TextBox x:Name="tbAge" FontSize="18" Margin="5"/>
-            <TextBlock Text="Всего выкуп" FontSize="16"/>
-            <TextBox x:Name="tbMoney" IsReadOnly="True" FontSize="18" Margin="5"/>
+        <StackPanel Grid.ColumnSpan="2" Grid.RowSpan="3" Margin="23,91,0,0">
+            <TextBlock Text="Имя" FontSize="18"  Width="274" />
+            <TextBox x:Name="tbFirst" FontSize="18" Margin="5" Width="276"/>
+            <TextBlock Text="Фамилия" FontSize="18" Width="271"/>
+            <TextBox x:Name="tbSecond" FontSize="18" Margin="5" Width="274"/>
+            <TextBlock Text="Отчество (если есть)" FontSize="18" Width="271"/>
+            <TextBox x:Name="tbThird" FontSize="18" Margin="5" Width="275"/>
+            <TextBlock Text="Возраст" FontSize="18" Width="272"/>
+            <TextBox x:Name="tbAge" FontSize="18" Margin="5" Width="273"/>
+            <TextBlock Text="Всего выкуп" FontSize="18" Width="268"/>
+            <TextBox x:Name="tbMoney" IsReadOnly="True" FontSize="18" Margin="5" Width="274"/>
         </StackPanel>
 
         <Ellipse Visibility="Collapsed" Grid.Column="2" Grid.Row="2" Height="200" Fill="LightPink"

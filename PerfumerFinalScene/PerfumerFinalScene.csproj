@@ -26,6 +26,9 @@
     <None Remove="Resources\transparent-plant-ivy-tree.png" />
     <None Remove="Resources\v1xjtmQ7aFU.jpg" />
     <None Remove="Resources\zamena.jpg" />
+    <None Remove="Resources\авторр.png" />
+    <None Remove="Resources\профиль.jpg" />
+    <None Remove="Resources\фото.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -54,6 +57,9 @@
     <Resource Include="Resources\transparent-plant-ivy-tree.png" />
     <Resource Include="Resources\v1xjtmQ7aFU.jpg" />
     <Resource Include="Resources\zamena.jpg" />
+    <Resource Include="Resources\авторр.png" />
+    <Resource Include="Resources\профиль.jpg" />
+    <Resource Include="Resources\фото.png" />
   </ItemGroup>
 
 </Project>
