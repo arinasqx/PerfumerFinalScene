@@ -77,7 +77,7 @@ namespace PerfumerFinalScene.Pages
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            var tempResult = MessageBox.Show("exit?", "exit?", MessageBoxButton.YesNo);
+            var tempResult = MessageBox.Show("Выйти?", "Выход", MessageBoxButton.YesNo);
             if (tempResult == MessageBoxResult.Yes)
             {
                 FrameClass.mainFrame.Navigate(new LoginPage());
@@ -126,8 +126,13 @@ namespace PerfumerFinalScene.Pages
                 throw;
             }
 
-            MessageBox.Show("thank u for order. goodbye", "thank u");
+            MessageBox.Show("Спасибо, что сделали заказ =)", "Спасибо!!!");
             FrameClass.mainFrame.Navigate(new CatalogPage());
+        }
+
+        private void cbShop_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }

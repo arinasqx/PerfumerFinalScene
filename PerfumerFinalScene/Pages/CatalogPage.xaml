@@ -7,46 +7,36 @@
       mc:Ignorable="d" 
       d:DesignHeight="500" d:DesignWidth="900"
       Title="CatalogPage">
-
-    <Grid Background="#FFCFFFA0">
+    <Grid Background="#FFFEADBE">
         <Grid.RowDefinitions>
-            <RowDefinition Height="2*"/>
-            <RowDefinition Height="3*"/>
-            <RowDefinition Height="3*"/>
-            <RowDefinition Height="1*"/>
+            <RowDefinition Height="122*"/>
+            <RowDefinition Height="155*"/>
+            <RowDefinition Height="167*"/>
+            <RowDefinition Height="56*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-
-        <StackPanel VerticalAlignment="Top" Grid.ColumnSpan="3" Margin="5">
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+        <StackPanel VerticalAlignment="Top" Grid.ColumnSpan="3" Margin="5,5,5,0" Height="49">
+            <StackPanel Orientation="Horizontal"  HorizontalAlignment="Right">
                 <Button Content="🛒" FontSize="26" ToolTip="basket" Margin="5" Click="Button_Click_Basket"/>
                 <Button Content="👤" FontSize="26" ToolTip="profile" Margin="5" Click="Button_Click_0"/>
                 <Button Content="🚪" FontSize="26" ToolTip="exit" Margin="5" Click="Button_Click_1"/>
             </StackPanel>
-
         </StackPanel>
-
-        <StackPanel Grid.ColumnSpan="3">
-            <Button Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Button_Click">
-                <TextBlock Grid.ColumnSpan="3" Margin="10" Background="#FFD9FFB5" Text="    ДОМОЙ  " Padding="50 10" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="22" FontWeight="Black">
-                    <TextBlock.Effect>
-                        <DropShadowEffect Color="#FF65FF65" BlurRadius="15" Direction="90" ShadowDepth="5"/>
-                    </TextBlock.Effect>
-                </TextBlock>
+        <StackPanel  HorizontalAlignment="Left" Margin="0,0,0,3" Width="230">
+            <Button Background="Transparent"  BorderThickness="0"  HorizontalAlignment="Center" VerticalAlignment="Center" Click="Button_Click">
+                <TextBlock Grid.ColumnSpan="3"  Text="НА ГЛАВНУЮ" Padding="50 10" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="18" FontWeight="Black"/>
             </Button>
-
-            <TextBlock Grid.ColumnSpan="3" Margin="5" Background="#FFB1FFB1" Text="Каталог" Padding="10 0" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="22" FontWeight="Black">
-                <TextBlock.Effect>
-                    <DropShadowEffect Color="#FF65FF65" BlurRadius="20" Direction="90" ShadowDepth="5"/>
-                </TextBlock.Effect>
-            </TextBlock>
         </StackPanel>
-
-        <ListBox x:Name="lbCatalog" Grid.Row="1" Grid.RowSpan="2" Grid.ColumnSpan="3" Background="#FFFFA5DB" Margin="0 10" SelectionChanged="lbCatalog_SelectionChanged">
+        <StackPanel Grid.ColumnSpan="3" Margin="230,10,230,10">
+            <Border CornerRadius="50" BorderBrush="Black" VerticalAlignment="Center" BorderThickness="3" Background="Cornsilk" Padding="5" Width="368" Height="94">
+                <TextBlock Grid.ColumnSpan="3"  Text="Каталог" Padding="10 0"  FontSize="90" HorizontalAlignment="Center" VerticalAlignment="Center" Height="138"/>
+            </Border>
+        </StackPanel>
+        <ListBox x:Name="lbCatalog" Grid.RowSpan="3" Grid.ColumnSpan="3" Background="Cornsilk" Margin="0,120,0,10" SelectionChanged="lbCatalog_SelectionChanged">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Margin="5">
@@ -54,12 +44,9 @@
                         <TextBlock FontSize="16" Text="{Binding Path=name}" HorizontalAlignment="Center" />
                         <TextBlock FontSize="16" Text="{Binding Path=typeId}" HorizontalAlignment="Center" />
                     </StackPanel>
-
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
-
-
-            <TextBlock Margin="3" FontSize="16" TextWrapping="Wrap" Text="© 2009-2024 . Официальный сайт Государственного автономного профессионального образовательного учреждения 'Оренбургский колледж экономики и информатики'" Grid.Row="3" Grid.ColumnSpan="3" VerticalAlignment="Bottom" Background="AliceBlue" TextAlignment="Center"/>
+        <TextBlock Margin="3,10,3,0" FontSize="16" TextWrapping="Wrap" Text="© 2009-2024 . Официальный сайт Государственного автономного профессионального образовательного учреждения 'Оренбургский колледж экономики и информатики'" Grid.Row="3" Grid.ColumnSpan="3" VerticalAlignment="Top" Background="#FFFEADBE" TextAlignment="Center" Height="43"/>
     </Grid>
 </Page>

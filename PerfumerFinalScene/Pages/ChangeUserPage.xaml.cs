@@ -46,7 +46,7 @@ namespace PerfumerFinalScene.Pages
 
         private void btnGoBack_Click(object sender, RoutedEventArgs e)
         {
-            var result = MessageBox.Show("sure? changes will not be saved!!", "sure?", MessageBoxButton.YesNo);
+            var result = MessageBox.Show("Уверены? Изменения не будут сохранены!!!", "Предупреждение", MessageBoxButton.YesNo);
             if(result == MessageBoxResult.Yes) FrameClass.mainFrame.GoBack();
         }
 
@@ -65,11 +65,11 @@ namespace PerfumerFinalScene.Pages
                     db.user.Update(ourMostFavoriteUser);
                     db.SaveChanges();
 
-                    MessageBox.Show("ok");
+                    MessageBox.Show("Окей");
 
                     FrameClass.mainFrame.GoBack();
                 }
-                else MessageBox.Show("password error");
+                else MessageBox.Show("Пароль неверный");
             }
             catch (Exception ex)
             {

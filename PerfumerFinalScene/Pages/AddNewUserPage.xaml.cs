@@ -33,7 +33,7 @@ namespace PerfumerFinalScene.Pages
 
         private void btnGoBack_Click(object sender, RoutedEventArgs e)
         {
-            var result = MessageBox.Show("exactly cancel?", "exactly cancel?", MessageBoxButton.YesNo);
+            var result = MessageBox.Show("Отменить?", "Предупреждение", MessageBoxButton.YesNo);
             if(result==MessageBoxResult.Yes) FrameClass.mainFrame.GoBack();
         }
 
@@ -47,7 +47,7 @@ namespace PerfumerFinalScene.Pages
                 {
                     if(item.login == tbLogin.Text)
                     {
-                        MessageBox.Show("login error");
+                        MessageBox.Show("Логин неверный");
                         return;
                     }
                 }
@@ -60,11 +60,11 @@ namespace PerfumerFinalScene.Pages
                     db.userProfile.Add(new() { userId = tbLogin.Text, firstName = "н/д", secondName = "н/д", thirdName = "н/д", age = 0, photo = "", totalMoney = 0 });
                     db.SaveChanges();
 
-                    MessageBox.Show("new user has been added");
+                    MessageBox.Show("Новый пользователь успешно добавлен");
 
                     ClearForm();
                 }
-                else MessageBox.Show("password error");
+                else MessageBox.Show("Пароль неверный");
             }
             catch (Exception ex)
             {

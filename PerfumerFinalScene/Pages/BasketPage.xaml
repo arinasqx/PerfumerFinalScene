@@ -33,27 +33,25 @@
 
             </StackPanel>
 
-            <StackPanel Grid.ColumnSpan="3">
-                <Button Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center" Click="btnGoBack_Click">
-                    <TextBlock Grid.ColumnSpan="3" Margin="10" Background="#FF90E0C8" Text="    ДОМОЙ  " Padding="40 10" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="22" FontWeight="Black">
+            <StackPanel Grid.ColumnSpan="1" Margin="0,0,64,43">
+                <Button Background="Transparent" HorizontalAlignment="Center" Click="btnGoBack_Click" Width="176">
+                    <TextBlock Grid.ColumnSpan="3" Margin="10" TextAlignment="Center" Background="#FF90E0C8" Text="КАТАЛОГ" Padding="40 10" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="22" FontWeight="Black">
                         <TextBlock.Effect>
                             <DropShadowEffect Color="#FF65FF65" BlurRadius="15" Direction="90" ShadowDepth="5"/>
                         </TextBlock.Effect>
                     </TextBlock>
                 </Button>
-
-                <TextBlock Grid.ColumnSpan="3" Margin="5" Background="#FFFFE640" Text="Корзина" Padding="5 0" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="18" FontWeight="Black">
-                    <TextBlock.Effect>
-                        <DropShadowEffect Color="#FFFFE640" BlurRadius="25" Direction="90" ShadowDepth="10"/>
-                    </TextBlock.Effect>
-                </TextBlock>
             </StackPanel>
-
+            <StackPanel VerticalAlignment="Center" Grid.ColumnSpan="3" Margin="202,0,201,0">
+                <Border CornerRadius="50" BorderBrush="Black" BorderThickness="3" Background="Cornsilk" Padding="5" Width="324" Height="86" >
+                    <TextBlock Grid.ColumnSpan="3" Background="Cornsilk" Text="КОРЗИНА" Padding="5 0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="48" FontWeight="Black" Width="254" Height="66"/>
+                </Border>
+            </StackPanel>
             <Button x:Name="btnEmptyBasket" Margin="20 0" Grid.Row="1" Grid.RowSpan="2" Grid.ColumnSpan="3" Background="#FFC3E090" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Padding="15 0" Click="btnEmptyBasket_Click">
-                <StackPanel Orientation="Vertical">
-                    <TextBlock Text="Корзина пуста. Хотите изменить это?" FontSize="24" TextWrapping="Wrap" TextAlignment="Center" />
-                    <Image Source="/Resources/graphic-catalog.png" MaxHeight="200" MaxWidth="300" Margin="5"/>
-                    <TextBlock Text="Посетить каталог" FontSize="20" TextAlignment="Center" />
+                <StackPanel Orientation="Vertical" Width="279">
+                    <TextBlock Text="Корзина пуста. Хотите изменить это?" FontSize="24" TextWrapping="Wrap" TextAlignment="Center" FontWeight="Bold" />
+                    <TextBlock Text="🛍️" FontSize="124" TextAlignment="Center" Background="#FFC3E090"/>
+                    <TextBlock Text="Посетить каталог" FontSize="20" TextAlignment="Center" FontWeight="Bold" />
                 </StackPanel>
             </Button>
 
@@ -70,19 +68,19 @@
                 </ListBox.ItemTemplate>
             </ListBox>
 
-            <StackPanel HorizontalAlignment="Center" Orientation="Horizontal" Grid.Row="3" Grid.ColumnSpan="3" Margin="15" Background="#FFE8E8B3">
+            <StackPanel HorizontalAlignment="Center" Orientation="Horizontal" Grid.Row="3" Grid.ColumnSpan="3" Margin="15" Background="Cornsilk">
                 <StackPanel Margin="20 5">
                     <TextBlock Text="Выберите способ оплаты:" Padding="20 0" Margin="20 0" FontSize="22"/>
                     <ComboBox x:Name="cbPay" FontSize="20" DisplayMemberPath="name"/>
                 </StackPanel>
-                
+
                 <StackPanel Margin="20 5">
                     <TextBlock Text="Выберите адрес получения:" Padding="20 0" Margin="20 0" FontSize="22"/>
-                    <ComboBox x:Name="cbShop" FontSize="20" DisplayMemberPath="location"/>
+                    <ComboBox x:Name="cbShop" FontSize="20" DisplayMemberPath="location" SelectionChanged="cbShop_SelectionChanged"/>
                 </StackPanel>
-                
+
             </StackPanel>
-            
+
             <UniformGrid Columns="2" Rows="4" Margin="10" Grid.Row="4" Grid.ColumnSpan="2" Background="White">
                 <TextBlock Text="персональная скидка............" FontSize="22" VerticalAlignment="Center" Padding="10"/>
                 <TextBlock Text="-0.0" FontSize="28" Foreground="Red" VerticalAlignment="Center" />
@@ -93,16 +91,16 @@
 
             </UniformGrid>
 
-            <StackPanel Grid.Row="4" Grid.Column="2" Margin="5" Background="AntiqueWhite">
+            <StackPanel Grid.Row="4" Grid.Column="2" Margin="5,5,5,32"  Background="Cornsilk">
 
-                <StackPanel VerticalAlignment="Center">                    
-                    <TextBlock Text="total:" FontSize="32" Margin="5 0"/>
-                    <TextBlock x:Name="tbTotalMoney" Text="0.00" Background="#FFFFF4E5" FontWeight="Bold" FontSize="36" Padding="5" Margin="10"/>
-                    <Button Content="send order" FontSize="24" Margin="5" Click="Send_Click"/>
+                <StackPanel VerticalAlignment="Center">
+                    <TextBlock Text="ИТОГО:" FontSize="32" Margin="5 0"/>
+                    <TextBlock x:Name="tbTotalMoney" Text="0.00"   Background="White" FontWeight="Bold" FontSize="36" Padding="5" Margin="10"/>
+                    <Button Content="Оплатить" FontSize="24" Margin="5" Click="Send_Click"/>
                 </StackPanel>
             </StackPanel>
 
-            <TextBlock Margin="3" FontSize="16" TextWrapping="Wrap" Grid.Row="5" Grid.ColumnSpan="3" Text="© 2009-2024 . Официальный сайт Государственного автономного профессионального образовательного учреждения 'Оренбургский колледж экономики и информатики'" VerticalAlignment="Bottom" Background="AliceBlue" TextAlignment="Center"/>
+            <TextBlock Margin="3" FontSize="16" TextWrapping="Wrap" Background="#FFCFFFA0" Grid.Row="5" Grid.ColumnSpan="3" Text="© 2009-2024 . Официальный сайт Государственного автономного профессионального образовательного учреждения 'Оренбургский колледж экономики и информатики'" VerticalAlignment="Bottom" TextAlignment="Center"/>
         </Grid>
 
     </ScrollViewer>

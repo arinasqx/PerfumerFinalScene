@@ -43,7 +43,7 @@ namespace PerfumerFinalScene.Pages
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            var tempResult = MessageBox.Show("exit?", "exit?", MessageBoxButton.YesNo);
+            var tempResult = MessageBox.Show("Выйти?", "Выход", MessageBoxButton.YesNo);
             if(tempResult == MessageBoxResult.Yes)
             {
                 FrameClass.mainFrame.Navigate(new LoginPage());

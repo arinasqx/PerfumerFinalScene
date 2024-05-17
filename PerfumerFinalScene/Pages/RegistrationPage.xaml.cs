@@ -41,7 +41,7 @@ namespace PerfumerFinalScene.Pages
 
             if (string.IsNullOrWhiteSpace(tbLogin.Text) || string.IsNullOrWhiteSpace(tbPass.Password) || string.IsNullOrWhiteSpace(tbPass2.Password))
             {
-                MessageBox.Show("Пустые поля нельзя","error");
+                MessageBox.Show("Нельзя оставлять пустые поля","Ошибка");
                 return;
             }
 
@@ -49,13 +49,13 @@ namespace PerfumerFinalScene.Pages
             {
                 if (item.login == tbLogin.Text)
                 {
-                    MessageBox.Show("curUser eror");
+                    MessageBox.Show("Ошибка пользователь");
                     return;
                 }
             }
             if (tbPass.Password != tbPass2.Password)
             {
-                MessageBox.Show("password eror");
+                MessageBox.Show("Пароль неверный");
                 return;
             }
             User newUser = new() { login = tbLogin.Text, password = tbPass.Password, roleId = 2 };
@@ -63,7 +63,7 @@ namespace PerfumerFinalScene.Pages
             db.userProfile.Add(new() { userId=tbLogin.Text, firstName="н/д", secondName = "н/д", thirdName = "н/д", age=0, photo="", totalMoney=0 });
             db.SaveChanges();
 
-            MessageBox.Show("welcome");
+            MessageBox.Show("Добро пожаловать =)");
             FrameClass.mainFrame.GoBack();
         }
     }

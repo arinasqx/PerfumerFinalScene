@@ -39,13 +39,13 @@ namespace PerfumerFinalScene.Pages
 
                 if (tempPrice < 0)
                 {
-                    MessageBox.Show("Неправильная стоимость");
+                    MessageBox.Show("Неверная стоимость");
                     return;
                 }
                 int tempType = db.productType.Where(x => x.name == cbType.Text).Select(x => x.id).FirstOrDefault();
                 db.product.Add(new Product() { name=tbFirst.Text, description = image.Source.ToString(), price=tempPrice, typeId = tempType });
                 db.SaveChanges();
-                MessageBox.Show("item has been added");
+                MessageBox.Show("Объект успешно добавлен");
                 tbPrice.Text = "";
                 tbFirst.Text = "";
                 cbType.SelectedItem = null;

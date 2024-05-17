@@ -19,7 +19,7 @@
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
 
-        <TextBlock Text="📑  admin panel" FontSize="32" Foreground="White" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock Text="📑  Панель администратора" FontSize="32" Foreground="White" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
         <Button HorizontalAlignment="Left" FontSize="28" Padding="5 0" VerticalAlignment="Top" Margin="10" Content="↩" Click="Button_Click"/>
 

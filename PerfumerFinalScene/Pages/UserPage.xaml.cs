@@ -45,7 +45,7 @@ namespace PerfumerFinalScene.Pages
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            var result = MessageBox.Show("save changes?", "save changes?", MessageBoxButton.YesNo);
+            var result = MessageBox.Show("Сохранить изменения?", "Сохранение", MessageBoxButton.YesNo);
             if(result==MessageBoxResult.No) FrameClass.mainFrame.GoBack();
             else
             {

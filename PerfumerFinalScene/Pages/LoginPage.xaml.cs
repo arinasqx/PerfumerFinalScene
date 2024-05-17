@@ -42,12 +42,12 @@ namespace PerfumerFinalScene.Pages
                 }
                 else
                 {
-                    MessageBox.Show("password error");
+                    MessageBox.Show("Пароль неверный");
                 }
             }
             else
             {
-                MessageBox.Show("user was not found", "error");
+                MessageBox.Show("Пользователь не был найден", "Ошибка");
             }
         }
 
