@@ -36,6 +36,7 @@
                 <Border CornerRadius="50" HorizontalAlignment="Left" BorderBrush="Black" BorderThickness="2" Background="#FFD4B7A5" Padding="5" Width="343" Height="69">
                     <TextBlock   Text="AROMAS" TextAlignment="Center"  FontSize="45" Width="326" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 </Border>
+                
             </StackPanel>
             <StackPanel Background="#FFD4B7A5" HorizontalAlignment="Right" Grid.Column="1" Grid.Row="0" Margin="0,128,12,119" Width="333">
                 <TextBlock   Text=" Элитный магазин порфимерии "  FontSize="20" FontWeight="Black" Width="333" />
