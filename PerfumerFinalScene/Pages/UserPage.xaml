@@ -21,6 +21,7 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Image Source="/Resources/профиль.jpg" MaxHeight="1000" MaxWidth="1000" Grid.ColumnSpan="3"  Grid.RowSpan="3" />
+        
         <Button HorizontalAlignment="Left" FontSize="28" Padding="5 0" VerticalAlignment="Bottom" Margin="21,10,10,100" Content="↩" Click="Button_Click"/>
 
         <TextBlock Text="ПРОФИЛЬ" Grid.ColumnSpan="3" TextAlignment="Center" VerticalAlignment="Top" FontSize="34" FontWeight="UltraBlack"  Margin="186,5,213,0" Height="55"/>
